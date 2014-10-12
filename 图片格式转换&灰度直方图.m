@@ -6,6 +6,7 @@ A = imread('lenna.jpg'); %读入图像，图像放在了在工作目录下，省
 whos A %查看图像变量的信息，可以知道是否是uint8类型
 imwrite(A,'lenna.bmp','BMP'); %将图像写入文件lenna.bmp中，并起到转换图像格式读入作用,'BMP'可省略
 imshow(A); %显示图像
+colorbar；%添加颜色条或者灰度条
 
 %在不同窗口显示%
 figure;
