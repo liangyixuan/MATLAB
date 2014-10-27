@@ -13,3 +13,8 @@ C = imtransform(A,tform2,'nearest');
 subplot(1,3,1);imshow(A);title('原图');
 subplot(1,3,2);imshow(B);title('水平镜像');
 subplot(1,3,3);imshow(C);title('竖直镜像');
+
+%转置旋转
+tform3 = maketform('affine',[0 1 0;1 0 0;0 0 1]);
+D = imtransform(A,tform3,'nearest');
+figure;imshow(D);
